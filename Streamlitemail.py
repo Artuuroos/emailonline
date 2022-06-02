@@ -29,8 +29,9 @@ with st.form(key='form1'):
             server.ehlo()  # Can be omitted
             server.login(sender_email, password)
             for i in range(len(liste)):
-                if liste[i]<zahl:
+                if liste[i]<=zahl:
                     server.sendmail(sender_email, receiver_email, message)
                 else:
-                    st.write("Es gibt kein Ticket für diesen Preis")
+                    if zahl>liste[i]
+                        st.write("Es gibt kein Ticket für diesen Preis")
 
