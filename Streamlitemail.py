@@ -8,13 +8,13 @@ sender_email = "maxmu111999@gmail.com"
 receiver_email = "maxmu111999@gmail.com"
 password = "khryacqdlzmsgzkw"
 message = """\
-Subject: Neuer Preis DB
+Subject: Neuer Preis DB !
 
 This message is sent from Python."""
 
 
 
-zahl=st.number_input("Zahl: ",min_value=40,max_value=110,step=1) 
+zahl=st.number_input("Zahl: ",min_value=1,max_value=11,step=1) 
 st.write("Alter: ", zahl)
 liste=[1,2,3,4,5,6,7,8,9,10]
 
@@ -31,4 +31,6 @@ with st.form(key='form1'):
             for i in range(len(liste)):
                 if liste[i]<zahl:
                     server.sendmail(sender_email, receiver_email, message)
+                else:
+                    st.write("Es gibt kein Ticket für diesen Preis")
 
