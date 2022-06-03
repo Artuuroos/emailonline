@@ -29,7 +29,7 @@ st.write("Ihr angegebener Preis: ", zahl,"€")
 liste=[1,2,3,4,5,6,7,8,9,10]
 
 with st.form(key='form1'):
-    submit_button = st.form_submit_button(label='Submit1')
+    submit_button = st.form_submit_button(label='Email anfordern')
     
     if submit_button:
         context = ssl.create_default_context()
