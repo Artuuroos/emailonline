@@ -10,7 +10,7 @@ password = "ujbdfkbgqwbjemrh"
 message = """\
 Subject: Neuer Preis DB 
 
-Ein neuer Preis ihrer Verbindung ist verfügbar kaufen Sie sich ein Ticket."""
+Ein neuer Preis ihrer Verbindung ist verfuegbar kaufen Sie sich ein Ticket."""
 
 
 zahl=st.number_input("Zahl: ",min_value=1,max_value=11,step=1) 
