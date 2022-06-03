@@ -54,17 +54,17 @@ lottie_download = load_lottieurl(lottie_url_download)
 st_lottie(lottie_hello, key="hello")
 
     
-    if submit_button:
-        context = ssl.create_default_context()
-        with smtplib.SMTP(smtp_server, port) as server:
-            server.ehlo()  # Can be omitted
-            server.starttls(context=context)
-            server.ehlo()  # Can be omitted
-            server.login(sender_email, password)
-            for i in range(len(liste)):
-                if liste[i]<=zahl:
-                    server.sendmail(sender_email, receiver_email, message)
-                else:
-                    if zahl>liste[i]:
-                        st.write("Es gibt kein Ticket für diesen Preis")
+   if submit_button:
+       context = ssl.create_default_context()
+       with smtplib.SMTP(smtp_server, port) as server:
+           server.ehlo()  # Can be omitted
+           server.starttls(context=context)
+           server.ehlo()  # Can be omitted
+           server.login(sender_email, password)
+           for i in range(len(liste)):
+               if liste[i]<=zahl:
+                   server.sendmail(sender_email, receiver_email, message)
+               else:
+                   if zahl>liste[i]:
+                       st.write("Es gibt kein Ticket für diesen Preis")
 
