@@ -10,7 +10,7 @@ password = "ujbdfkbgqwbjemrh"
 message = """\
 Subject: Neuer Preis DB 
 
-This message is send from python.""""
+This message is send from python."""
 
 
 zahl=st.number_input("Zahl: ",min_value=1,max_value=11,step=1) 
