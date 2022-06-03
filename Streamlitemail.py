@@ -4,13 +4,18 @@ import streamlit as st
 
 port = 587  # For starttls
 smtp_server = "smtp.gmail.com"
-sender_email = "maxmu111999@gmail.com"
+sender_email = "dbtickeralert@gmail.com"
 receiver_email = "maxmu111999@gmail.com"
-password = "khryacqdlzmsgzkw"
+password = "ujbdfkbgqwbjemrh"
 message = """\
-Subject: Neuer Preis DB 
+Subject: Neuer Preis DB !
 
-This message is sent from Python."""
+Sehr geehrter Nutzer, 
+der Preis ihrer Verbindung hat sich verändert.
+Wenn Sie zu diesem Preis ein Ticket buchen wollen dann gehen Sie auf die DB Seite.
+
+Freundlicher Gruß
+DBTickeralert."""
 
 
 
