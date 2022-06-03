@@ -11,7 +11,10 @@ message = """\
 Subject: Neuer Preis DB 
 
 Ein neuer Preis ihrer Verbindung ist verfuegbar.
-Kaufen Sie sich ein Ticket."""
+Kaufen Sie sich ein Ticket.
+
+Freundlicher Gruß
+DBTickeralert"""
 
 
 zahl=st.number_input("Zahl: ",min_value=1,max_value=11,step=1) 
