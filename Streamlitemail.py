@@ -2,10 +2,18 @@ import smtplib, ssl
 import pandas as pd
 import streamlit as st
 
+
+st.subheader("Benachrichtigung anfordern")
+emailteil1=st.text_input("Emailnamen eingeben")
+emaildomains=["@gmail.com","@gmx.de","@web.de"]
+
+option = st.selectbox('Email Domain auswählen', emaildomains)
+ganzeemail=emailteil1+option
+
 port = 587  # For starttls
 smtp_server = "smtp.gmail.com"
 sender_email = "dbtickeralert@gmail.com"
-receiver_email = "maxmu111999@gmail.com"
+receiver_email = ganzemail
 password = "ujbdfkbgqwbjemrh"
 message = """\
 Subject: Neuer Preis DB 
@@ -15,7 +23,6 @@ Kaufen Sie sich ein Ticket.
 
 Freundlicher Gruss
 DBTickeralert"""
-
 
 zahl=st.number_input("Zahl: ",min_value=1,max_value=11,step=1) 
 st.write("Alter: ", zahl)
