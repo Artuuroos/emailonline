@@ -13,7 +13,7 @@ ganzeemail=emailteil1+option
 port = 587  # For starttls
 smtp_server = "smtp.gmail.com"
 sender_email = "dbtickeralert@gmail.com"
-receiver_email = ganzemail
+receiver_email = ganzeemail
 password = "ujbdfkbgqwbjemrh"
 message = """\
 Subject: Neuer Preis DB 
