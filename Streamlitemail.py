@@ -10,7 +10,7 @@ password = "ujbdfkbgqwbjemrh"
 message = """\
 Subject: Neuer Preis DB 
 
-Sehr geehrter Nutzer, der Preis ihrer Verbindung hat sich verändert.Wenn Sie zu diesem Preis ein Ticket buchen wollen dann gehen Sie auf die DB Seite.Freundlicher Gruß.""
+Sehr geehrter Nutzer, der Preis ihrer Verbindung hat sich verändert.Wenn Sie zu diesem Preis ein Ticket buchen wollen dann gehen Sie auf die DB Seite.Freundlicher Gruß."""
 
 
 
