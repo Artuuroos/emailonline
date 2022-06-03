@@ -13,7 +13,7 @@ Subject: Neuer Preis DB
 Ein neuer Preis ihrer Verbindung ist verfuegbar.
 Kaufen Sie sich ein Ticket.
 
-Freundlicher Gruß
+Freundlicher Gruss
 DBTickeralert"""
 
 
