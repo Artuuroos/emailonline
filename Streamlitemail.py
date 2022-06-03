@@ -1,6 +1,12 @@
 import smtplib, ssl
 import pandas as pd
+import streamlit as stimport requests
+
 import streamlit as st
+from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie_spinner
+import time
+
 
 
 st.subheader("Benachrichtigung anfordern")
@@ -30,6 +36,23 @@ liste=[1,2,3,4,5,6,7,8,9,10]
 
 with st.form(key='form1'):
     submit_button = st.form_submit_button(label='Email anfordern')
+    
+    
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+
+lottie_url_hello = "https://assets4.lottiefiles.com/packages/lf20_xpfxxien.json"
+lottie_url_download = "https://assets4.lottiefiles.com/packages/lf20_xpfxxien.json"
+lottie_hello = load_lottieurl(lottie_url_hello)
+lottie_download = load_lottieurl(lottie_url_download)
+
+
+st_lottie(lottie_hello, key="hello")
+
     
     if submit_button:
         context = ssl.create_default_context()
