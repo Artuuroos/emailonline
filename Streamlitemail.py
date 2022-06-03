@@ -24,8 +24,8 @@ Kaufen Sie sich ein Ticket.
 Freundlicher Gruss
 DBTickeralert"""
 
-zahl=st.number_input("Zahl: ",min_value=1,max_value=11,step=1) 
-st.write("Alter: ", zahl)
+zahl=st.number_input("Preis: ",min_value=1,max_value=11,step=1) 
+st.write("Ihr angegebener Preis: ", zahl,"€")
 liste=[1,2,3,4,5,6,7,8,9,10]
 
 with st.form(key='form1'):
