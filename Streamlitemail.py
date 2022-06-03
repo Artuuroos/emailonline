@@ -8,10 +8,9 @@ sender_email = "dbtickeralert@gmail.com"
 receiver_email = "maxmu111999@gmail.com"
 password = "ujbdfkbgqwbjemrh"
 message = """\
-Subject: Neuer Preis DB !
+Subject: Neuer Preis DB 
 
-Sehr geehrter Nutzer, 
-der Preis ihrer Verbindung hat sich verändert.
+Sehr geehrter Nutzer, der Preis ihrer Verbindung hat sich verändert.
 Wenn Sie zu diesem Preis ein Ticket buchen wollen dann gehen Sie auf die DB Seite.
 
 Freundlicher Gruß
