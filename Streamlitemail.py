@@ -84,7 +84,7 @@ else:
         "DBTickeralert "
         ]
         yag.send(to=ganzeemail,
-                 subject='Neuer Preis'
+                 subject='Neuer Preis',
                  contents=contents)
 
         liste=[1,2,3,4,5,6,7,8,9,10]
