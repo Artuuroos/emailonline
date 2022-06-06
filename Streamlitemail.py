@@ -74,7 +74,8 @@ else:
         option = st.selectbox('Email Domain auswählen', emaildomains)
         ganzeemail=emailteil1+option
 
-        port = 587  # For starttlsimport yagmail
+        port = 587  # For starttls
+        smtp_server = "smtp.gmail.com"
         yag = yagmail.SMTP("dbtickeralert@gmail.com","ujbdfkbgqwbjemrh")
         contents = [
         "Ein neuer Preis ihrer Verbindung ist verfuegbar."
@@ -83,10 +84,6 @@ else:
         "Freundlicher Gruss"
         "DBTickeralert "
         ]
-        yag.send(to=ganzeemail,
-                 subject='Neuer Preis',
-                 contents=contents)
-
         liste=[1,2,3,4,5,6,7,8,9,10]
 
                 
@@ -96,14 +93,16 @@ else:
                 if submit_buttonpreis:
                     st.write("Sie erhalten eine Email Benachrichitung wenn sich der Preis unter",preisangabe ,"€ befindet") 
         context = ssl.create_default_context()
-        with smtplib.SMTP(smtp_server, port) as server:
-            server.ehlo()  # Can be omitted
-            server.starttls(context=context)
-            server.ehlo()  # Can be omitted
-            server.login(sender_email, password)
+        #with smtplib.SMTP(smtp_server, port) as server:
+            #server.ehlo()  # Can be omitted
+            #server.starttls(context=context)
+            #server.ehlo()  # Can be omitted
+            #server.login(sender_email, password)
             for i in range(len(liste)):
                 if liste[i]<=preisangabe:
-                    server.sendmail(sender_email, receiver_email, message)
+                    yag.send(to=ganzeemail,
+                             subject='Neuer Preis',
+                             contents=contents)
                 else:
                     if preisangabe>liste[i]:
                         st.write("Ihre Kaufbereitschaft ist sehr hoch") 
