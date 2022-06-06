@@ -21,14 +21,14 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive',
          'https://www.googleapis.com/auth/drive.file', 'https://www.googleapis.com/auth/spreadsheets']
-creds = ServiceAccountCredentials.from_json_keyfile_name(r'C:\Users\momo\PycharmProjects\streamlit\creds.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name(r'https://github.com/Artuuroos/emailonline/blob/master/creds.json', scope)
 client = gspread.authorize(creds)
 st.set_page_config(page_title="My Website", layout="wide")
 
 st.subheader("Hi unsere Website")
 st.title("Datenanalyse")
 spreadsheet = client.open("test")
-gc = gspread.service_account(filename=r"C:\Users\momo\PycharmProjects\streamlit\creds.json")
+gc = gspread.service_account(filename=r"https://github.com/Artuuroos/emailonline/blob/master/creds.json")
 sheet = gc.open("test").sheet1
 #sheet.insert_row(["anfrage", "alter_1", "bahnkarteneu", "start", "ziel", "datum", "abfahrt_zv1", "ankunft_zv1", "art_zug_zv1",
 #                    "sparpreis2_zv1"])
