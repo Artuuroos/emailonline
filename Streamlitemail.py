@@ -98,14 +98,14 @@ else:
             #server.starttls(context=context)
             #server.ehlo()  # Can be omitted
             #server.login(sender_email, password)
-            for i in range(len(liste)):
-                if liste[i]<=preisangabe:
-                    yag.send(to=ganzeemail,
-                             subject='Neuer Preis',
-                             contents=contents)
-                else:
-                    if preisangabe>liste[i]:
-                        st.write("Ihre Kaufbereitschaft ist sehr hoch") 
+        for i in range(len(liste)):
+          if liste[i]<=preisangabe:
+             yag.send(to=ganzeemail,
+                      subject='Neuer Preis',
+                      contents=contents)
+          else:
+              if preisangabe>liste[i]:
+                  st.write("Ihre Kaufbereitschaft ist sehr hoch") 
            
                       
         
