@@ -80,8 +80,6 @@ else:
         receiver_email = ganzeemail
         password = "ujbdfkbgqwbjemrh"
         message = """\
-              
-        
         Neuer Preis
         Ein neuer Preis ihrer Verbindung ist verfuegbar.
         Kaufen Sie sich ein Ticket.
