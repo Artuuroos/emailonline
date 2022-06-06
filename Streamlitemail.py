@@ -83,7 +83,9 @@ else:
         "Freundlicher Gruss"
         "DBTickeralert "
         ]
-        yag.send(ganzeemail, 'Neuer Preis', contents)
+        yag.send(to=ganzeemail,
+                 subject='Neuer Preis'
+                 contents=contents)
 
         liste=[1,2,3,4,5,6,7,8,9,10]
 
