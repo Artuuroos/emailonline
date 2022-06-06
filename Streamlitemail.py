@@ -82,6 +82,7 @@ else:
         message = """\
               
         
+        Neuer Preis
         Ein neuer Preis ihrer Verbindung ist verfuegbar.
         Kaufen Sie sich ein Ticket.
 
