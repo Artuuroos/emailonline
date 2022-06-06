@@ -78,10 +78,10 @@ else:
         smtp_server = "smtp.gmail.com"
         yag = yagmail.SMTP("dbtickeralert@gmail.com","ujbdfkbgqwbjemrh")
         contents = [
-        "Ein neuer Preis ihrer Verbindung ist verfuegbar."
-        "Kaufen Sie sich ein Ticket."
+        "Ein neuer Preis ihrer Verbindung ist verfuegbar."/n
+        "Kaufen Sie sich ein Ticket."/n
 
-        "Freundlicher Gruss"
+        "Freundlicher Gruss"/n
         "DBTickeralert "
         ]
         liste=[1,2,3,4,5,6,7,8,9,10]
