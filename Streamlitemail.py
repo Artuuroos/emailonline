@@ -79,10 +79,9 @@ else:
         sender_email = "dbtickeralert@gmail.com"
         receiver_email = ganzeemail
         password = "ujbdfkbgqwbjemrh"
-        subject= "Neuer Preis DB"
         message = """\
          
-
+        Subject:DB Preis!
         Ein neuer Preis ihrer Verbindung ist verfuegbar.
         Kaufen Sie sich ein Ticket.
 
@@ -105,7 +104,7 @@ else:
             server.login(sender_email, password)
             for i in range(len(liste)):
                 if liste[i]<=preisangabe:
-                    server.sendmail(sender_email, receiver_email,subject, message)
+                    server.sendmail(sender_email, receiver_email, message)
                 else:
                     if preisangabe>liste[i]:
                         st.write("Ihre Kaufbereitschaft ist sehr hoch") 
