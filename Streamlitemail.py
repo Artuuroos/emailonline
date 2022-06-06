@@ -80,12 +80,9 @@ else:
         receiver_email = ganzeemail
         password = "ujbdfkbgqwbjemrh"
         message = """\
-        Neuer Preis
-        Ein neuer Preis ihrer Verbindung ist verfuegbar.
-        Kaufen Sie sich ein Ticket.
+        Subject: Neuer Preis DB
 
-        Freundlicher Gruss
-        DBTickeralert"""
+        This message is sent from Python."""
 
         liste=[1,2,3,4,5,6,7,8,9,10]
 
