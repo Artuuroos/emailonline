@@ -79,6 +79,7 @@ else:
         sender_email = "dbtickeralert@gmail.com"
         receiver_email = ganzeemail
         password = "ujbdfkbgqwbjemrh"
+        subject= "Neuer Preis DB"
         message = """\
          
 
@@ -104,7 +105,7 @@ else:
             server.login(sender_email, password)
             for i in range(len(liste)):
                 if liste[i]<=preisangabe:
-                    server.sendmail(sender_email, receiver_email, message)
+                    server.sendmail(sender_email, receiver_email,subject, message)
                 else:
                     if preisangabe>liste[i]:
                         st.write("Ihre Kaufbereitschaft ist sehr hoch") 
