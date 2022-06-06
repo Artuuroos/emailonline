@@ -92,20 +92,14 @@ else:
                 submit_buttonpreis = st.form_submit_button(label='Benachrichtige mich')    
                 if submit_buttonpreis:
                     st.write("Sie erhalten eine Email Benachrichitung wenn sich der Preis unter",preisangabe ,"€ befindet") 
-        context = ssl.create_default_context()
-        #with smtplib.SMTP(smtp_server, port) as server:
-            #server.ehlo()  # Can be omitted
-            #server.starttls(context=context)
-            #server.ehlo()  # Can be omitted
-            #server.login(sender_email, password)
-        for i in range(len(liste)):
-          if liste[i]<=preisangabe:
-             yag.send(to=ganzeemail,
-                      subject='Neuer Preis',
-                      contents=contents)
-          else:
-              if preisangabe>liste[i]:
-                  st.write("Ihre Kaufbereitschaft ist sehr hoch") 
+                    for i in range(len(liste)):
+                      if liste[i]<=preisangabe:
+                        yag.send(to=ganzeemail,
+                        subject='Neuer Preis',
+                        contents=contents)
+                      else:
+                        if preisangabe>liste[i]:
+                          st.write("Ihre Kaufbereitschaft ist sehr hoch") 
            
                       
         
