@@ -3,4 +3,4 @@ streamlit==1.10.0
 plotly ==5.2.2
 plotly-express==0.4.1
 streamlit-option-menu==0.3.2
-
+yagmail==0.15.277
