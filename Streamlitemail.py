@@ -7,7 +7,7 @@ import smtplib, ssl
 import requests
 import streamlit as st
 import time
-
+import yagmail
 
 
 
@@ -74,15 +74,16 @@ else:
         option = st.selectbox('Email Domain auswählen', emaildomains)
         ganzeemail=emailteil1+option
 
-        port = 587  # For starttls
-        smtp_server = "smtp.gmail.com"
-        sender_email = "dbtickeralert@gmail.com"
-        receiver_email = ganzeemail
-        password = "ujbdfkbgqwbjemrh"
-        message = """\
-        Subject: Neuer Preis DB
+        port = 587  # For starttlsimport yagmail
+        yag = yagmail.SMTP("dbtickeralert@gmail.com","ujbdfkbgqwbjemrh")
+        contents = [
+        "Ein neuer Preis ihrer Verbindung ist verfuegbar."
+        "Kaufen Sie sich ein Ticket."
 
-        This message is sent from Python."""
+        "Freundlicher Gruss"
+        "DBTickeralert "
+        ]
+        yag.send('ganzeemail', 'Neuer Preis', contents)
 
         liste=[1,2,3,4,5,6,7,8,9,10]
 
