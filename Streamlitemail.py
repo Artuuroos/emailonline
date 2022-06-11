@@ -64,7 +64,9 @@ else:
         
     if optionen2=="Price":
         st.write("Preisantizipation")
-        
+    if optionen2=="Preisvorhersage":
+        st.open("https://share.streamlit.io/svenpio/digital-lab/Analyse/Preisvorhersage.py#euro")
+    
     if optionen2=="Notifi":
         
         st.subheader("Benachrichtigung anfordern")
