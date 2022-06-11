@@ -12,7 +12,7 @@ import yagmail
 
 
 optionen2 = option_menu(menu_title=None,
-                       options=["Home","Diagramm","Price","Notifi"],
+                       options=["Home","Diagramm","Price","Notifi", "Preisvorhersage"],
                        icons=["house","graph-up","clock","alarm"],
                        menu_icon="cast",
                        default_index=0,
