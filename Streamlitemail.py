@@ -25,7 +25,7 @@ cur = conn.cursor()
 a="aaaa"
 b="komm"
 def show_name():
-  result=pandas.DataFrame(columns=["usernameaa","tabellea"])
+  result=pandas.DataFrame(columns=["username","tabelle"])
   result.loc[len(result)]=[a,b]
   result.to_sql(name="offline", con=engine, if_exists="append")
   result=result[0:0]
