@@ -24,7 +24,7 @@ global cursor
 cur = conn.cursor()
 a=1
 def show_name():
-  if a <1000
+  if a <1000:
     with st.form("log"+a):
       loginn=st.text_input("Email-Adresse: ")
       loginp=st.text_input("Passwort: ",type="password")
