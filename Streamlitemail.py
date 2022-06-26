@@ -22,8 +22,8 @@ conn = psycopg2.connect(host ="dpg-cajo73sgqg428kba9ikg-a.frankfurt-postgres.ren
 engine = create_engine('postgresql://dbticket_user:Nhaema5GzFDyW3j0sGHVYjfhRBu0fTvy@dpg-cajo73sgqg428kba9ikg-a.frankfurt-postgres.render.com/dbticket')
 global cursor 
 cur = conn.cursor()
-a="first"
-b="second"
+a="aaaa"
+b="komm"
 def show_name():
   result=pandas.DataFrame(columns=["usernameaa","tabellea"])
   result.loc[len(result)]=[a,b]
