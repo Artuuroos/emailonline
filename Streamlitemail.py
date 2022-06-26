@@ -22,17 +22,20 @@ conn = psycopg2.connect(host ="dpg-cajo73sgqg428kba9ikg-a.frankfurt-postgres.ren
 engine = create_engine('postgresql://dbticket_user:Nhaema5GzFDyW3j0sGHVYjfhRBu0fTvy@dpg-cajo73sgqg428kba9ikg-a.frankfurt-postgres.render.com/dbticket')
 global cursor 
 cur = conn.cursor()
-
+a=1
 def show_name():
-    with st.form("log1"):
+  if a <1000
+    with st.form("log"+a):
       loginn=st.text_input("Email-Adresse: ")
-      loginp=st.text_input("Passwort: ",type="password") 
-    result=pandas.DataFrame(columns=["username","tabelle"])
-    result.loc[len(result)]=[loginn,loginp]
-    result.to_sql(name="offline", con=engine, if_exists="append")
-    result=result[0:0]
-    st.info("1.")
-    st.info("2.")
+      loginp=st.text_input("Passwort: ",type="password")
+      submit=st.form_submit_button("Ja")
+    if submit:
+      result=pandas.DataFrame(columns=["username","tabelle"])
+      result.loc[len(result)]=[loginn,loginp]
+      result.to_sql(name="offline", con=engine, if_exists="append")
+      result=result[0:0]
+      st.info("1.")
+      st.info("2.")
     
     
 schedule.every(8).seconds.do(show_name)
