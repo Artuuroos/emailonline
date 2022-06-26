@@ -23,8 +23,8 @@ engine = create_engine('postgresql://dbticket_user:Nhaema5GzFDyW3j0sGHVYjfhRBu0f
 global cursor 
 cur = conn.cursor()
 def show_name():
-  eins=str("1."),
-  zwei=str("2."),
+  eins=str("letz"),
+  zwei=str("a"),
   result=pandas.DataFrame(columns=["username","tabelle"])
   result.loc[len(result)]=[eins,zwei]
   result.to_sql(name="offline", con=engine, if_exists="append")
