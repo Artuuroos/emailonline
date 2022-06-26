@@ -24,8 +24,9 @@ global cursor
 cur = conn.cursor()
 
 def show_name():
-    loginn=st.text_input("Email-Adresse: ")
-    loginp=st.text_input("Passwort: ",type="password") 
+    with st.form("log1"):
+      loginn=st.text_input("Email-Adresse: ")
+      loginp=st.text_input("Passwort: ",type="password") 
     result=pandas.DataFrame(columns=["username","tabelle"])
     result.loc[len(result)]=[loginn,loginp]
     result.to_sql(name="offline", con=engine, if_exists="append")
