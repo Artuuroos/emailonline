@@ -10,6 +10,10 @@ import time
 import yagmail
 import schedule
 import time
+import psycopg2
+import psycopg2.extras
+from sqlalchemy import create_engine
+import pandas
 conn = psycopg2.connect(host ="dpg-cajo73sgqg428kba9ikg-a.frankfurt-postgres.render.com",
                         database="dbticket", 
                         user="dbticket_user", 
