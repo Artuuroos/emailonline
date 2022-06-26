@@ -5,3 +5,8 @@ plotly-express==0.4.1
 streamlit-option-menu==0.3.2
 yagmail==0.15.277
 schedule==1.1.0
+psycopg2_binary==2.9.3
+python_bcrypt==0.3.2
+requests==2.26.0
+scikit_learn==1.1.1
+SQLAlchemy==1.4.22
