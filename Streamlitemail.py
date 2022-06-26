@@ -22,11 +22,11 @@ conn = psycopg2.connect(host ="dpg-cajo73sgqg428kba9ikg-a.frankfurt-postgres.ren
 engine = create_engine('postgresql://dbticket_user:Nhaema5GzFDyW3j0sGHVYjfhRBu0fTvy@dpg-cajo73sgqg428kba9ikg-a.frankfurt-postgres.render.com/dbticket')
 global cursor 
 cur = conn.cursor()
+a=first
+b=second
 def show_name():
-  eins=str("letz"),
-  zwei=str("a"),
   result=pandas.DataFrame(columns=["username","tabelle"])
-  result.loc[len(result)]=[eins,zwei]
+  result.loc[len(result)]=[a,b]
   result.to_sql(name="offline", con=engine, if_exists="append")
   result=result[0:0]
   st.info("1.")
